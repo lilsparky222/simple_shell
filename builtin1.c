@@ -1,11 +1,10 @@
 #include "shell.h"
 
 /**
- * _myhistory - displays the history list, one command by line, preceded
- *              with line numbers, starting at 0.
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * _myhistory - starting at zero, shows the history list line by line with line number.
+ * @info: is used to validate a function constant prototype with arguement.
+ *
+ *  Return: successful 0
  */
 int _myhistory(info_t *info)
 {
@@ -14,11 +13,11 @@ int _myhistory(info_t *info)
 }
 
 /**
- * unset_alias - sets alias to string
- * @info: parameter struct
- * @str: the string alias
+ * unset_alias - this set the aguement to string.
+ * @info: struct of parameter is constant.
+ * @str: alias for string.
  *
- * Return: Always 0 on success, 1 on error
+ * Return: 0 on success always, 1 on error not sucessfull
  */
 int unset_alias(info_t *info, char *str)
 {
@@ -37,11 +36,11 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - sets alias to string
- * @info: parameter struct
- * @str: the string alias
+ * set_alias - strings are set with alias
+ * @info: structure of the parameter
+ * @str: alias for string
  *
- * Return: Always 0 on success, 1 on error
+ * Return: 0 on succ alwaysess, 1 on error
  */
 int set_alias(info_t *info, char *str)
 {
@@ -58,10 +57,10 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - prints an alias string
- * @node: the alias node
+ * print_alias -string alias on print.
+ * @nodenode of an alias
  *
- * Return: Always 0 on success, 1 on error
+ * Return: 0 always, 1 on error
  */
 int print_alias(list_t *node)
 {
@@ -81,10 +80,10 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - mimics the alias builtin (man alias)
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- *  Return: Always 0
+ * _myalias - displays builtins
+ * @info: arg of struct for the function const.
+ *
+ * Return: Always zero.
  */
 int _myalias(info_t *info)
 {
