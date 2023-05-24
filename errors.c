@@ -1,10 +1,11 @@
-include "shell.h"
+#include "shell.h"
 
 /**
- * _eputs - prints an input string
- * @str: the string to be printed
+ * _eputs - tring print out.
  *
- * Return: Nothing
+ * @str: print string
+ *
+ * Return: None
  */
 void _eputs(char *str)
 {
@@ -20,16 +21,15 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - writes the character c to stderr
- * @c: The character to print
+ * _eputchar - a characted 'c' is stored
+ * @c: the characted to be printed
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 or -1 otherwise
  */
 int _eputchar(char c)
 {
 	static int i;
-	static char buf[WRITE_BUF_SIZE];
+	static char buf [WRITE_BUF_SIZE];
 
 	if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE)
 	{
@@ -42,12 +42,11 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
- * @c: The character to print
- * @fd: The filedescriptor to write to
+ * _putfd - character 'c' is stared in fd
+ * @c:character to be printed.
+ * @fd: field discriptor
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 or -1 otherwise.
  */
 int _putfd(char c, int fd)
 {
@@ -65,11 +64,11 @@ int _putfd(char c, int fd)
 }
 
 /**
- * _putsfd - prints an input string
- * @str: the string to be printed
- * @fd: the filedescriptor to write to
+ * _putsfd - output a string
+ * @str: printed string
+ * @fd: field discribtor
  *
- * Return: the number of chars put
+ * Return: No. character
  */
 int _putsfd(char *str, int fd)
 {
