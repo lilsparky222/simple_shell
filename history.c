@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * get_history_file - gets the history file
- * @info: parameter struct
+ * get_history_file - the history files
+ * @info: paer struct with args
  *
- * Return: allocated string containg history file
+ *Return: history file
  */
 
 char *get_history_file(info_t *info)
@@ -54,10 +54,10 @@ int write_history(info_t *info)
 }
 
 /**
- * read_history - reads history from file
+ * read_history - rehistory from file
  * @info: the parameter struct
  *
- * Return: histcount on success, 0 otherwise
+ * Return: hist 0 otherwise
  */
 int read_history(info_t *info)
 {
@@ -124,10 +124,10 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history linked list after changes
- * @info: Structure containing potential arguments. Used to maintain
+ * renumber_history - his renumbe of linked_list
+ * @info: Structure con with arguments.
  *
- * Return: the new histcount
+ * Return: 0 new
  */
 int renumber_history(info_t *info)
 {
